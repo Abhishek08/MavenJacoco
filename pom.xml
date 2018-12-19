@@ -18,6 +18,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<skip.unit.tests>false</skip.unit.tests>
 	</properties>
 
 	<dependencies>
