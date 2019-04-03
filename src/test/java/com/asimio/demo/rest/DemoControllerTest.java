@@ -31,7 +31,7 @@ public class DemoControllerTest {
         // Given
         Mockito.when(this.mockSomeBusinessService.findEntity("blah")).thenReturn("meh");
         // When
-        ResponseEntity<String> actualResponse = this.demoController.findEntiry("blah");
+        ResponseEntity<String> actualResponse = this.demoController.findEntity("blah");
         // Then
         Assert.assertThat(actualResponse.getStatusCode(), Matchers.equalTo(HttpStatus.OK));
         Assert.assertThat(actualResponse.getBody(), Matchers.equalTo("meh"));
