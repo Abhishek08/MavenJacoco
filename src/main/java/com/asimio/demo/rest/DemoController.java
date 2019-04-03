@@ -18,7 +18,6 @@ public class DemoController {
 
     @Autowired
     public DemoController(SomeBusinessService someBusinessService) {
-        super();
         this.someBusinessService = someBusinessService;
     }
 
