@@ -23,7 +23,7 @@ public class DemoController {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<String> findEntiry(@PathVariable String id) {
+    public ResponseEntity<String> findEntity(@PathVariable String id) {
         String entity = this.someBusinessService.findEntity(id);
         return new ResponseEntity<>(entity, HttpStatus.OK);
     }
