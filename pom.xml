@@ -18,7 +18,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<skip.unit.tests>false</skip.unit.tests>
 	</properties>
 
 	<dependencies>
@@ -65,7 +64,7 @@
 							<goal>test</goal>
 						</goals>
 						<configuration>
-							<skipTests>${skip.unit.tests}</skipTests>
+							<skipTests>false</skipTests>
 							<includes>
 								<include>**/*Test.java</include>
 							</includes>
