@@ -34,6 +34,6 @@ public class DemoControllerTest {
         ResponseEntity<String> actualResponse = this.demoController.findEntity("blah");
         // Then
         Assert.assertThat(actualResponse.getStatusCode(), Matchers.equalTo(HttpStatus.OK));
-        Assert.assertThat(actualResponse.getBody(), Matchers.equalTo("should-fail"));
+        Assert.assertThat(actualResponse.getBody(), Matchers.equalTo("meh"));
     }
 }
