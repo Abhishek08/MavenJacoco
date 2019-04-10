@@ -86,6 +86,59 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+<!-- 				<version>0.8.3</version> -->
+				<executions>
+					<execution>
+						<id>coverage-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<!-- FIXME Disable using VM arg -->
+						<id>coverage-check</id>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>PACKAGE</element>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.50</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+<!--
+                <check>
+                    <classRate>80</classRate>
+                    <instructionRate>80</instructionRate>
+                    <methodRate>80</methodRate>
+                    <complexityRate>80</complexityRate>
+                    <lineRate>80</lineRate>
+                </check>
+-->
+
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Exclude reports and generate only those to be uploaded to Sonar -->
+						<id>coverage-report</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
