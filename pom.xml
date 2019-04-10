@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>com.asimio.demo</groupId>
-	<artifactId>springboot2-split-unit-integration-tests</artifactId>
+	<artifactId>unit-integration-tests-jacoco-coverage</artifactId>
 	<version>0-SNAPSHOT</version>
-	<name>springboot2-split-unit-integration-tests</name>
-	<description>Spring Boot 2 webapp + Maven + Surefire - Splitting unit and integration tests demo</description>
+	<name>unit-integration-tests-jacoco-coverage</name>
+	<description>Spring Boot 2 - Maven - Surefire - JaCoCo - Unit and integration tests coverage</description>
 
 	<properties>
 		<java.version>1.8</java.version>
