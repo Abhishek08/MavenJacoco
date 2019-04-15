@@ -1,6 +1,6 @@
 # README #
 
-Accompanying source code for blog entry at https://tech.asimio.net/2019/04/08/Splitting-Unit-and-Integration-Tests-using-Maven-and-Surefire-plugin.html
+Accompanying source code for blog entry at FIXME
 
 ### Requirements ###
 
@@ -12,6 +12,9 @@ Accompanying source code for blog entry at https://tech.asimio.net/2019/04/08/Sp
 ```
 mvn clean verify
 ```
+
+Open report at `target/site/jacoco/index.html`
+
 
 ### Who do I talk to? ###
 
