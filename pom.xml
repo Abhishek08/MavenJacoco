@@ -98,6 +98,14 @@
 						</goals>
 					</execution>
 					<execution>
+						<!-- FIXME Exclude reports and generate only those to be uploaded to Sonar -->
+						<id>coverage-report</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+					<execution>
 						<id>coverage-check</id>
 						<goals>
 							<goal>check</goal>
@@ -119,14 +127,6 @@
 								</rule>
 							</rules>
 						</configuration>
-					</execution>
-					<execution>
-						<!-- FIXME Exclude reports and generate only those to be uploaded to Sonar -->
-						<id>coverage-report</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>report</goal>
-						</goals>
 					</execution>
 				</executions>
 			</plugin>
