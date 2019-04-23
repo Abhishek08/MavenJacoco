@@ -98,13 +98,13 @@
 						</goals>
 					</execution>
 					<execution>
-						<!-- FIXME Exclude reports and generate only those to be uploaded to Sonar -->
 						<id>coverage-report</id>
 						<phase>post-integration-test</phase>
 						<goals>
 							<goal>report</goal>
 						</goals>
 					</execution>
+					<!-- Threshold -->
 					<execution>
 						<id>coverage-check</id>
 						<goals>
