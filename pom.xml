@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>com.asimio.demo</groupId>
-	<artifactId>unit-integration-tests-jacoco-coverage</artifactId>
+	<artifactId>code-coverage-maven-jacoco</artifactId>
 	<version>0-SNAPSHOT</version>
-	<name>unit-integration-tests-jacoco-coverage</name>
+	<name>code-coverage-maven-jacoco</name>
 	<description>Spring Boot 2 - Maven - Surefire - JaCoCo - Unit and integration tests coverage</description>
 
 	<properties>
