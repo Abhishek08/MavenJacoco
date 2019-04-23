@@ -1,6 +1,6 @@
 # README #
 
-Accompanying source code for blog entry at https://tech.asimio.net/2019/04/23/Reporting-Unit-and-Integration-Tests-Coverage-using-Maven-and-JaCoCo-plugin.html
+Accompanying source code for blog entry at https://tech.asimio.net/2019/04/23/Reporting-Code-Coverage-using-Maven-and-JaCoCo-plugin.html
 
 ### Requirements ###
 
