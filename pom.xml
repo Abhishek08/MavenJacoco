@@ -98,8 +98,7 @@
                   <!-- default target/jscoco/site/* -->
                   <configuration>
                      <outputDirectory>target/jacoco-report</outputDirectory>
-                  </configuration>
-                  <configuration>
+               
                      <rules>
                         <rule>
                            <element>CLASS</element>
