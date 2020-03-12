@@ -14,9 +14,9 @@ public class DefaultSomeBusinessServiceTest {
         this.someBusinessService = new DefaultSomeBusinessService();
     }
 
-    @Test
-    public void shouldRetrieveEntityForKnownId() {
-        String actual = this.someBusinessService.findEntity("blah");
-        Assert.assertThat(actual, Matchers.equalTo("Retrieved entity with id: blah"));
-    }
+   // @Test
+   // public void shouldRetrieveEntityForKnownId() {
+   //     String actual = this.someBusinessService.findEntity("blah");
+   //     Assert.assertThat(actual, Matchers.equalTo("Retrieved entity with id: blah"));
+   // }
 }
