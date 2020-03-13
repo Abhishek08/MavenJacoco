@@ -98,7 +98,7 @@
                   <!-- default target/jscoco/site/* -->
                   <configuration>
                      <outputDirectory>target/jacoco-report</outputDirectory>
-               
+                     <dataFile>${project.build.directory}/coverage-reports/jacoco.exec</dataFile>
                      <rules>
                         <rule>
                            <element>CLASS</element>
@@ -109,7 +109,7 @@
                               <limit>
                                  <counter>LINE</counter>
                                  <value>COVEREDRATIO</value>
-                                 <minimum>80%</minimum>
+                                 <minimum>0.80</minimum>
                               </limit>
                            </limits>
                         </rule>
